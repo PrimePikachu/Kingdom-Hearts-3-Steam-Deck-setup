@@ -1,0 +1,60 @@
+Kingdom Hearts 3 Steam Deck Guide
+Personal Copy (recommended)
+Can be played offline
+
+Needed materials
+Protonup-QT (discovery store)
+File transfer tool (or external media)
+MF Installer(https://github.com/z0z0z/mf-install)
+Keyboard recommended
+
+1. Take the installation of KH3 and just slap it on your deck
+2. Install ProtonUp-Qt
+3. Install Proton-GE 7-17+
+4. Add KH3 executable to steam
+5. At KH3.exe go to settings > Properties > force compatibility tool
+6. Select Proton GE 7-17+
+7. Launch KH3
+8. Freeze (may need keyboard to alt f4 or just spam the on screen keyboard shortcut until you find a way out)
+9. Go to Dolphin (file manager) click three lines top right and view hidden files
+10. Navigate to Home > .local > share > Steam > steamapps > compatdata
+11. From here scroll to the bottom right and from the last folder right click and look for properties
+12. In the Folder find pfx right click copy location
+13. Find Folder with created time matching when you first launched KH3
+14. Go to https://github.com/z0z0z/mf-install
+15. Top right download code
+16. Go to where you downloaded MF installer and then in the MF installer folder right click and open terminal
+17. Right click open Terminal inside the folder
+18. Go to Documents and create a new text file and open it with KWrite
+20. On the MF installer github copy and paste the script into your text file (looks like this WINEPREFIX="/steam folder/steamapps/compatdata/111111/pfx" PROTON="/steam folder/steamapps/common/Proton 5.0" ./mf-install.sh -proton)
+21. Remove the directories in the script (WINEPREFIX="" PROTON="" ./mf-install.sh -proton)
+22. Now plug in your directory by pasting what you have clipped in the quotation marks after WINEPREFIX
+23. Find your proton directory at Home > .local > share > Steam > compatibilitytools.d
+24. Right click on your preferred Proton version and hit Copy Location
+25. Now inject it in PROTON=”” between the quotation marks
+26. Now that you have written your script run it in the Terminal
+27. Launch KH3
+
+Heroic Launcher Copy (easiest)
+
+Heroic Launcher (discovery store)
+MF Installer (https://github.com/z0z0z/mf-install)
+Keyboard Recommended 
+
+1. In Heroic Launcher go to Wine manager and install Proton GE 7-17+
+2. Go to KH3 settings and select Proton GE in wine settings
+3. Launch KH3
+4. Freeze (alt f4)
+5. In the settings find the wineprefix folder and copy the directory (Game/heroic/prefixes/kh3)
+6. Go to https://github.com/z0z0z/mf-install
+7. Go to where you downloaded MF installer and then in the MF installer folder right click and open terminal
+8. Go to Documents and create a new text file and open it with KWrite
+9. On the MF installer github copy and paste the script into your text file (looks like this WINEPREFIX="/steam folder/steamapps/compatdata/111111/pfx" PROTON="/steam folder/steamapps/common/Proton 5.0" ./mf-install.sh -proton)
+10. Remove the directories in the script (WINEPREFIX="" PROTON="" ./mf-install.sh -proton)
+11. Now plug in your directory by pasting what you have clipped in the quotation marks after WINEPREFIX
+12. Go to Wine Manager in Heroic and there should be a folder icon next to your installed Proton GE click it
+13. Right click on your preferred Proton version and hit Copy Location
+14. Now inject it in PROTON=”” between the quotation marks
+15. Now that you have written your script run it in the Terminal
+16. Launch KH3
+
